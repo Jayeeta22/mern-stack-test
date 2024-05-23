@@ -6,7 +6,7 @@ const generateUniqueCodes = require('./src/utils/generateUniqueCodes');
 const uploadToMongoDB = require('./src/db/mongodb');
 const tickets = [];
 
-fs.createReadStream(path.join(__dirname, './data/tickets.csv'))
+fs.createReadStream(path.join(__dirname, './data/ticketsTest.csv'))
   .pipe(csv())
   .on('data', (row) => {
     tickets.push(row);

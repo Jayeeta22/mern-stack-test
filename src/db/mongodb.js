@@ -1,7 +1,8 @@
 const { MongoClient } = require('mongodb');
 
 const uploadToMongoDB = async (data) => {
-  const uri =process.env.MONGODB_URI ;
+  // const uri =process.env.MONGODB_URI ;
+  const uri ="mongodb+srv://eveIT:eveIT123@cluster0.dozng.mongodb.net/tickets-db" ;
   const client = new MongoClient(uri);
 
   try {
